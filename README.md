@@ -95,7 +95,7 @@ revision/
 
 ## Important Problems
 
-These problems are high priority and commonly asked in interviews:
+ high priority:
 
 Two Sum  
 Best Time to Buy and Sell Stock  
@@ -137,9 +137,3 @@ leetcode-solutions/
 09-trees/  
 revision/  
 
----
-
-## Notes
-
-This repository focuses on consistency and understanding.  
-Problems are grouped by patterns to make revision easier and improve interview performance.  
