@@ -69,16 +69,18 @@ function isAnagram(s, t) {
 console.log(isAnagram("anagram", "nagaram"));
 
 // Approach used:
-// Use a HashSet to store elements while iterating
+// Use a HashMap to count character frequencies in one string
+// Then decrease the count while iterating through the second string
 
 // Why:
-// HashSet allows constant time lookup to check if an element already exists
+// HashMap allows constant time lookup and efficient frequency tracking
 
 // Time complexity:
-// O(n) — iterate through the array once
+// O(n) — iterate through both strings once
 
 // Space complexity:
-// O(n) — store up to n unique elements in the set
+// O(1) — at most 26 lowercase English letters
+//1 means constant doewnot grow with input size
 
 // Pattern used:
-// Hashing / HashSet (fast lookup for duplicates)
+// Hashing / Frequency Count (character counting)
