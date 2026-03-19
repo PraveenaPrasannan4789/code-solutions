@@ -24,3 +24,16 @@
 // 1 <= prices.length <= 105
 // 0 <= prices[i] <= 104
 
+
+
+function maxProfit(arr){
+const highest = arr.reduce((acc,val)=>{
+acc= val>acc?val:acc;
+return acc;
+},0);
+
+return highest;
+
+}
+
+console.log(maxProfit([7,6,4,3,1]))
