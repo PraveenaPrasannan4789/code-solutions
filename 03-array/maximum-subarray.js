@@ -37,3 +37,32 @@ var maxSubArray = function(nums) {
 
 console.log(maxSubArray([1]))
  
+
+// Problem: Maximum Subarray
+// Given an integer array nums, find the subarray with the largest sum, and return its sum.
+// Example: nums = [-2,1,-3,4,-1,2,1,-5,4] → max sum = 6 ([4,-1,2,1])
+
+// Approach used:
+// Track current subarray sum and update maximum sum in one pass
+
+// Why:
+// Ensures we consider all contiguous subarrays efficiently without checking every pair
+
+// Time complexity:
+// O(n) → one pass through the array of n elements
+
+// Space complexity:
+// O(1) → only a few variables used (currentSum, maxSum, optional indices)
+// let currentSum = nums[0];
+// let maxSum = nums[0];
+// Memory does NOT grow with input size
+
+// Pattern used:
+// Greedy / Kadane's Algorithm / Single pass
+
+// Memory trick:
+// currentSum → maxSum
+// (At each step, either start a new subarray or extend the previous)
+
+// Loop type:
+// Single loop → O(n)
