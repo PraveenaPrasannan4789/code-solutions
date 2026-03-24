@@ -45,3 +45,24 @@ return totalArray;
 }
 
 console.log('productOfArray',productOfArray([1,2,3,4]))
+
+// Approach used:
+// Use prefix and suffix products to calculate result without division
+
+// Why:
+// Ensures each index multiplies all other elements in one pass
+
+// Time complexity:
+// O(n) → three linear passes: prefix, suffix, final multiply
+
+// Space complexity:
+// O(n) → two extra arrays for prefix and suffix (can optimize to O(1))
+
+// Pattern used:
+// Prefix-Suffix Product, single pass
+
+// Memory trick:
+// left prefix → right suffix → multiply → result
+
+// Loop type:
+// Three linear loops → O(n)
