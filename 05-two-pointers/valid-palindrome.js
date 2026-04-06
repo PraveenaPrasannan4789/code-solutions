@@ -49,3 +49,18 @@ console.log(isPalindrome("A man, a plan, a canal: Panama")); // true
 console.log(isPalindrome("race a car")); // false
 console.log(isPalindrome(" ")); // true
 console.log(isPalindrome("0P")); // false
+
+// Approach used:
+// Iterative comparison of characters from both ends using two pointers.
+// Why:
+// Checks for palindrome efficiently in a single pass, avoiding extra string creation or recursion.
+// Time complexity:
+// O(n) → n is the length of the string → each character is checked at most once.
+// Space complexity:
+// O(1) → uses only two pointer variables, no extra arrays or strings needed.
+// Pattern used:
+// Two-pointer / Sliding window approach.
+// Memory trick:
+// Skip non-alphanumeric characters on the fly → no need for string cleanup or regex replacements.
+// Loop type:
+// Single loop → O(n) → pointers move inward from both ends until they meet or mismatch occurs.s
