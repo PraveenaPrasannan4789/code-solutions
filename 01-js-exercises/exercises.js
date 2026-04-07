@@ -32,3 +32,14 @@ const flattenedArray = (arr) => {
 };
 
 console.log(flattenedArray([1, [2, 3, 4], 5]));
+
+//count occurences
+//["a","b","a","c","b","a"]
+const countOccurences = (arr) => {
+  let countObj = {};
+  for (let i of arr) {
+    countObj[i] = (countObj[i] || 0) + 1;
+  }
+  return countObj;
+};
+console.log("countOccurences", countOccurences(["a", "b", "a", "c", "b", "a"]));
