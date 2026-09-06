@@ -69,3 +69,24 @@ const activeStaff = array1.filter((x) => {
   return x.active === true;
 });
 console.log("activeStaff", activeStaff);
+
+//get their names
+const staffNames = array1.map((x) => x.name);
+console.log("staffnames", staffNames);
+
+// 3. Find the staff member aged 12
+const staffAged12 = array1.filter((x) => x.age === 12);
+console.log("staffnames", staffAged12);
+
+// 4. Calculate the average age
+
+const totalAge = array1.reduce((acc, val) => {
+  return (acc = acc + val.age);
+}, 0);
+console.log("totalAge", totalAge);
+const avgAge = totalAge / array1.length;
+console.log("Average age", avgAge);
+
+// 5. Check if everyone is over 20
+const isEveryOneOver20 = array1.every((x) => x.age > 20);
+console.log("isEveryOneOver20", isEveryOneOver20);
