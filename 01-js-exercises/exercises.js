@@ -43,3 +43,29 @@ const countOccurences = (arr) => {
   return countObj;
 };
 console.log("countOccurences", countOccurences(["a", "b", "a", "c", "b", "a"]));
+
+//Array processing
+
+const array1 = [
+  {
+    name: "Joana",
+    age: 22,
+    active: true,
+  },
+  {
+    name: "Adil",
+    age: 28,
+    active: false,
+  },
+  {
+    name: "Rakesh",
+    age: 12,
+    active: true,
+  },
+];
+
+//get active staff
+const activeStaff = array1.filter((x) => {
+  return x.active === true;
+});
+console.log("activeStaff", activeStaff);
