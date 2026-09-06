@@ -85,7 +85,7 @@ const totalAge = array1.reduce((acc, val) => {
 }, 0);
 console.log("totalAge", totalAge);
 const avgAge = totalAge / array1.length;
-console.log("Average age", avgAge);
+console.log("Average age", Math.round(avgAge));
 
 // 5. Check if everyone is over 20
 const isEveryOneOver20 = array1.every((x) => x.age > 20);
