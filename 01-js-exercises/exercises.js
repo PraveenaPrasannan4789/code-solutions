@@ -90,3 +90,19 @@ console.log("Average age", Math.round(avgAge));
 // 5. Check if everyone is over 20
 const isEveryOneOver20 = array1.every((x) => x.age > 20);
 console.log("isEveryOneOver20", isEveryOneOver20);
+
+//Objects & Destructuring
+const worker = {
+  name: "John",
+  age: 32,
+  role: "Manager",
+  active: true,
+};
+
+// Exercises:
+// 1. Destructure name and role
+
+const { name, role } = worker;
+
+console.log(name); // John
+console.log(role); // Manager
